@@ -1,12 +1,11 @@
 const myData = JSON.parse(localStorage.getItem("data")) || [];
 
-// False qiymatlar: undefined, null, false, "", 0
 
 uiChanger(myData);
 myForm.onsubmit = (event) => {
   event.preventDefault();
   if (!username.value || !age.value || !email.value) {
-    alert("Ma'lumotlarni to'liq to'ldiring");
+    alert("Ma'lumotlarni to'liq to'ldirilmagan");
   } else {
     const data = {
       username: username.value,
