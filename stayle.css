@@ -1,19 +1,120 @@
-*{
+.container{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
-    font-size: 16px;
-}
-.container {
-    max-width: 1000px;
-    margin: 0;
-    width: 0;
-}
-.form {
-    margin-top: 100px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+    }
+    .reg{
+        border: 1px solid rgb(207, 124, 52);
+        width: 500px;
+        height: 550px;
+        background-color: #fff;
+        border-radius: 5%;
+        display: flex;
+        margin: 0 auto;
+    }
+    
+    h1{
+    color: rgb(39, 38, 38);
+    margin-left: 65px;
+    }
+    
+    #myForm{
+    margin-top: 50px;
+    margin-left: 85px;
+    }
+    
 
-}
+    .input-group {
+        position: relative;
+       }
+       
+       .input {
+        width: 300px;
+        border: solid 2px #ca942f;
+        border-radius: 1rem;
+        background: none;
+        padding: 1rem;
+        font-size: 1rem;
+        color: #ae9c37;
+        transition: border 150ms cubic-bezier(0.4,0,0.2,1);
+       }
+       
+       .user-label {
+        position: absolute;
+        left: 15px;
+        color: #191816;
+        pointer-events: none;
+        transform: translateY(1rem);
+        transition: 150ms cubic-bezier(0.4,0,0.2,1);
+       }
+       
+       .input:focus, input:valid {
+        outline: none;
+        border: 1.5px solid #1a73e8;
+       }
+       
+       .input:focus ~ label, input:valid ~ label {
+        transform: translateY(-50%) scale(0.8);
+        background-color: white;
+        padding: 0 .2em;
+        color: #2196f3;
+       }
+    
+       .input-group{
+    margin-top: 25px;
+    }
+    
+    /* From Uiverse.io by NorthFishHasNa */ 
+    button {
+        display: inline-block;
+        border-radius: 4px;
+        background-color: #858588;
+        border: none;
+        color: #FFFFFF;
+        text-align: center;
+        font-size: 17px;
+        padding: 12px;
+        width: 130px;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 5px;
+        margin-left: 95px;
+        margin-top: 55px;
+       }
+       
+       button span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+       }
+       
+       button span:after {
+        content: '»';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -15px;
+        transition: 0.5s;
+       }
+       
+       button:hover span {
+        padding-right: 15px;
+       }
+       
+       button:hover span:after {
+        opacity: 1;
+        right: 0;
+       }
+    
+    
+    
+    
+    #ui{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    border: 3px solid white;
+    margin-top: 200px;
+    }
